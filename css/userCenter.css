@@ -1,6 +1,6 @@
 /*user center*/
 .userCenter-wrap{
-    overflow: auto;
+    /*overflow: auto;*/
     padding-bottom: 49px;
 }
 .userCenter-top{
