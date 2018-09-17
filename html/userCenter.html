@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <!-- jQuery WeUI -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/userCenter.css">
+</head>
+<body bgcolor="#f5f5f5">
+    <div class="userCenter-wrap">
+        <!--top-->
+        <div class="userCenter-top">
+            <div class="user-top">
+                <div class="title">个人中心</div>
+                <div class="title-r">
+                    <div class="title-r-btn-set"></div>
+                    <div class="title-r-btn-chat"></div>
+                </div>
+            </div>
+            <div class="user-info">
+                 <div class="container">
+                     <div class="user-info-top">
+                         <img class="user-face" src="../img/userCenter/head.png" alt="">
+                         <div class="user-info-detail">
+                             <div class="user-name">
+                                 <p>小瓜小瓜小瓜小瓜</p>
+                                 <img src="../img/userCenter/male.png" alt="">
+                                 <img src="../img/userCenter/female.png" alt="">
+                             </div>
+                             <div class="phone">
+                                 <img src="../img/userCenter/nomber.png" alt="">
+                                 <p>13212345678</p>
+                             </div>
+                         </div>
+                     </div>
+                     <ul class="user-info-bot">
+                         <li class="money">
+                             <div><span>1234.00</span>元</div>
+                             <p>余额</p>
+                         </li>
+                         <li class="redPacket">
+                             <div><span>123.00</span>元</div>
+                             <p>红包</p>
+                         </li>
+                         <li class="discounts">
+                             <div><span>12</span>张</div>
+                             <p>优惠券</p>
+                         </li>
+                         <li class="integral">
+                             <div><span>1234</span>分</div>
+                             <p>积分</p>
+                         </li>
+                     </ul>
+                 </div>
+            </div>
+        </div>
+        <!--center-->
+        <div class="userCenter-center">
+            <div class="ad-container"><img class="ad" src="../img/userCenter/vip_bg.png" alt=""></div>
+            <div class="ad-container"><img class="ad" src="../img/userCenter/recharge.png" alt=""></div>
+            <ul class="business-ul">
+                <li class="b-li">
+                    <span class="weui-badge" style="position: absolute;top: 20px;right: 25px;">8</span>
+                    <img src="../img/userCenter/my_orders.png" alt="" class="b-li-img">
+                    <p>我的订单</p>
+                </li>
+                <li class="b-li">
+                    <span class="weui-badge" style="position: absolute;top: 20px;right: 25px;">8</span>
+                    <img src="../img/userCenter/my_grouporders.png" alt="" class="b-li-img">
+                    <p>我的拼团</p>
+                </li>
+                <li class="b-li">
+                    <span class="weui-badge" style="position: absolute;top: 20px;right: 25px;">8</span>
+                    <img src="../img/userCenter/my_bookorders.png" alt="" class="b-li-img">
+                    <p>我的预售</p>
+                </li>
+                <li class="b-li">
+                    <span class="r-t-circle"></span>
+                    <img src="../img/userCenter/my_state.png" alt="" class="b-li-img">
+                    <p>我的动态</p>
+                </li>
+            </ul>
+            <div class="business-ul-bot">
+                <ul class="business-ul-2">
+                    <li class="b-li li-boder-r">
+                        <img src="../img/userCenter/my_collection.png" alt="" class="b-li-img">
+                        <p>我的收藏</p>
+                    </li>
+                    <li class="b-li li-boder-r">
+                        <img src="../img/userCenter/my_quest.png" alt="" class="b-li-img">
+                        <p>我的任务</p>
+                    </li>
+                    <li class="b-li li-boder-r">
+                        <img src="../img/userCenter/my_add.png" alt="" class="b-li-img">
+                        <p>地址管理</p>
+                    </li>
+                    <li class="b-li">
+                        <img src="../img/userCenter/my_healthy.png" alt="" class="b-li-img">
+                        <p>健康指数</p>
+                    </li>
+                </ul>
+                <ul class="business-ul-3">
+                    <li class="b-li  li-boder-r">
+                        <img src="../img/userCenter/feedback.png" alt="" class="b-li-img">
+                        <p>意见反馈</p>
+                    </li>
+                    <li class="b-li li-boder-r">
+                        <img src="../img/userCenter/my_sign.png" alt="" class="b-li-img">
+                        <p>每日签到</p>
+                    </li>
+                    <li class="b-li li-boder-r">
+                        <img src="../img/userCenter/my_extension.png" alt="" class="b-li-img">
+                        <p>我的推广</p>
+                    </li>
+                    <li class="b-li">
+                        <img src="../img/userCenter/my_contact.png" alt="" class="b-li-img">
+                        <p>联系我们</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <!--bottom tabbar-->
+        <div class="weui-tabbar">
+            <a href="index.html" class="weui-tabbar__item" target="_self">
+                <div class="weui-tabbar__icon">
+                    <img src="../img/userCenter/home1.png" alt="">
+                </div>
+                <p class="weui-tabbar__label">首页</p>
+            </a>
+            <a href="#classify" class="weui-tabbar__item">
+                <div class="weui-tabbar__icon">
+                    <img src="../img/userCenter/classification1.png" alt="">
+                </div>
+                <p class="weui-tabbar__label">分类</p>
+            </a>
+            <a href="#cart" class="weui-tabbar__item">
+                <div class="weui-tabbar__icon">
+                    <img src="../img/userCenter/cart_empty.png" alt="">
+                </div>
+                <p class="weui-tabbar__label">购物车</p>
+            </a>
+            <a href="#person-center" class="weui-tabbar__item weui-bar__item--on">
+                <div class="weui-tabbar__icon">
+                    <img src="../img/userCenter/pc2.png" alt="">
+                </div>
+                <p class="weui-tabbar__label">个人中心</p>
+            </a>
+        </div>
+
+</body>
+<!-- jQuery WeUI -->
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+<!-- jQuery WeUI拓展插件需要的JS -->
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/city-picker.min.js"></script>
+<script>
+
+</script>
+</html>

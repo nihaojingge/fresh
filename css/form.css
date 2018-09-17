@@ -1,0 +1,69 @@
+@charset "UTF-8";
+body{
+    font-family:"微软雅黑"
+}
+@media screen and (max-width: 319px) {
+    html {
+        font-size: 85.33333px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+    html {
+        font-size: 85.33333px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 374px) {
+    html {
+        font-size: 96px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 383px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+@media screen and (min-width: 384px) and (max-width: 399px) {
+    html {
+        font-size: 102.4px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 413px) {
+    html {
+        font-size: 106.66667px;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size: 110.4px;
+    }
+}
+/*表单样式*/
+.input-special{
+    padding: 0 27px;
+    margin-top: 0.18rem;
+}
+
+.btn-width{
+    width: 100%;
+}
+.input-margin{
+    margin-top: 0.54rem;
+}
+.sign-btn{
+    background-color: #00aeef;
+}
+.order-input{
+    display: flex;
+    justify-content: flex-start;
+}
+.col-66{
+    width: 66.66666667%;
+}
+.col-33{
+    width: 33.33333333%;;
+}

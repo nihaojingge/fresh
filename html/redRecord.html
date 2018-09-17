@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>红包记录</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <!-- jQuery WeUI -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">-->
+    <link rel="stylesheet" href="../lib/jquery-weui/jquery-weui.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body bgcolor="#f1f1f1">
+    <div class="redRecord">
+        <div class="top common-top-title">
+            <div class="arrow-l"></div>
+            <div class="title">红包记录</div>
+        </div>
+        <div class="center common-center">
+            <ul class="record-ul">
+                <li class="record-li">
+                    <div class="record-li-top">购物抵用<div class="red-price fc-red">-35.0</div></div>
+                    <div class="record-li-bot">2018-03-15</div>
+                </li>
+                <li class="record-li">
+                    <div class="record-li-top">充值就送<div class="red-price fc-green">+35.0</div></div>
+                    <div class="record-li-bot">2018-03-15</div>
+                </li>
+                <li class="record-li">
+                    <div class="record-li-top">系统赠送<div class="red-price fc-green">+35.0</div></div>
+                    <div class="record-li-bot">2018-03-15</div>
+                </li>
+                <li class="record-li">
+                    <div class="record-li-top">购物抵用<div class="red-price fc-red">-35.0</div></div>
+                    <div class="record-li-bot">2018-03-15</div>
+                </li>
+                <li class="record-li">
+                    <div class="record-li-top">购物抵用<div class="red-price fc-red">-35.0</div></div>
+                    <div class="record-li-bot">2018-03-15</div>
+                </li>
+                <li class="record-li">
+                    <div class="record-li-top">购物抵用<div class="red-price fc-red">-35.0</div></div>
+                    <div class="record-li-bot">2018-03-15</div>
+                </li>
+                <li class="record-li">
+                    <div class="record-li-top">购物抵用<div class="red-price fc-red">-35.0</div></div>
+                    <div class="record-li-bot">2018-03-15</div>
+                </li>
+                <li class="record-li">
+                    <div class="record-li-top">购物抵用<div class="red-price fc-red">-35.0</div></div>
+                    <div class="record-li-bot">2018-03-15</div>
+                </li>
+                <li class="record-li">
+                    <div class="record-li-top">购物抵用<div class="red-price fc-red">-35.0</div></div>
+                    <div class="record-li-bot">2018-03-15</div>
+                </li>
+                <li class="record-li">
+                    <div class="record-li-top">购物抵用<div class="red-price fc-red">-35.0</div></div>
+                    <div class="record-li-bot">2018-03-15</div>
+                </li>
+                <li class="record-li">
+                    <div class="record-li-top">购物抵用<div class="red-price fc-red">-35.0</div></div>
+                    <div class="record-li-bot">2018-03-15</div>
+                </li>
+                <li class="record-li">
+                    <div class="record-li-top">购物抵用<div class="red-price fc-red">-35.0</div></div>
+                    <div class="record-li-bot">2018-03-15</div>
+                </li>
+                <li class="record-li">
+                    <div class="record-li-top">购物抵用<div class="red-price fc-red">-35.0</div></div>
+                    <div class="record-li-bot">2018-03-15</div>
+                </li>
+                <li class="record-li">
+                    <div class="record-li-top">购物抵用<div class="red-price fc-red">-35.0</div></div>
+                    <div class="record-li-bot">2018-03-15</div>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom">
+
+        </div>
+    </div>
+</body>
+<!-- jQuery WeUI -->
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<!--<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>-->
+<script src="../lib/jquery-weui/jquery-weui.js"></script>
+<!-- jQuery WeUI拓展插件需要的JS -->
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/city-picker.min.js"></script>
+<script>
+    $('.redPacket-ul li').on('click',function () {
+        if($(this).attr('class','redPacket-li')){
+            $('.redPacket-ul li').each(function () {
+                $(this).removeClass('redPacket-selected');
+                $(this).addClass('redPacket-li');
+            });
+            $(this).removeClass('redPacket-li');
+            $(this).addClass('redPacket-selected');
+        }
+    });
+</script>
+
+</html>

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>皕鲜</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <!-- jQuery WeUI -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body bgcolor="#f5f5f5">
+    <!--bottom tabbar-->
+    <div class="weui-tabbar zi-8">
+        <a href="#homepage" class="weui-tabbar__item weui-bar__item--on">
+            <div class="weui-tabbar__icon">
+                <img src="../img/index/home2.png" alt="">
+            </div>
+
+            <p class="weui-tabbar__label">首页</p>
+        </a>
+        <a href="#classify" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <img src="../img/userCenter/classification1.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">分类</p>
+        </a>
+        <a href="#cart" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon">
+                <img src="../img/userCenter/cart_empty.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">购物车</p>
+        </a>
+        <a href="userCenter.html" class="weui-tabbar__item" target="_self">
+            <div class="weui-tabbar__icon">
+                <img src="../img/index/pc1.png" alt="">
+            </div>
+            <p class="weui-tabbar__label">个人中心</p>
+        </a>
+    </div>
+    <!--search bar-->
+    <div class="top common-searchBar">
+        <div class="index-search-bar">
+            <div class="location">
+                <img class="location-icon" src="../img/index/location.png" alt="">
+                <div class="location-add">这有五个字</div>
+            </div>
+
+            <div class="search-box float-left">
+                <span class="search-icon"></span>
+                <input type="text" placeholder="输入商家、商品名称">
+            </div>
+            <div class="search-msg float-right"></div>
+        </div>
+    </div>
+    <!--index content-->
+    <div class="index-content common-center">
+        <!--index top-->
+        <div class="index-top">
+            <!--banner-->
+            <div class="index-banner swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img class="banner-img" src="../img/index/banner.png" alt=""></div>
+                    <div class="swiper-slide"><img class="banner-img" src="../img/index/banner.png" alt=""></div>
+                    <div class="swiper-slide"><img class="banner-img" src="../img/index/banner.png" alt=""></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!--nav btn-->
+            <div class="index-t-cneter bg-fff">
+                <ul class="nav-ul">
+                    <li class="nav-li">
+                        <img class="nav-li-top" src="../img/index/clean.png">
+                        <div class="nav-li-bot">净菜服务</div>
+                    </li>
+                    <li class="nav-li">
+                        <img class="nav-li-top" src="../img/index/menu.png">
+                        <div class="nav-li-bot">健康菜谱</div>
+                    </li>
+                    <li class="nav-li">
+                        <img class="nav-li-top" src="../img/index/dietitian.png">
+                        <div class="nav-li-bot">营养师</div>
+                    </li>
+                    <li class="nav-li">
+                        <img class="nav-li-top" src="../img/index/dynamic.png">
+                        <div class="nav-li-bot">我秀我餐</div>
+                    </li>
+                    <li class="nav-li">
+                        <img class="nav-li-top" src="../img/index/always_buy.png">
+                        <div class="nav-li-bot">常购商品</div>
+                    </li>
+                </ul>
+            </div>
+            <!--activity-->
+            <div class="index-t-bot">
+                <img class="div-1 bg-fff" src="../img/index/hot_book.png">
+                <div class="div-2">
+                    <div class="div-2-top"><img src="../img/index/sign.png" alt="" class="sign-gift"></div>
+                    <div><img class="lucky-game" src="../img/index/lucky.png"></div>
+                </div>
+
+            </div>
+            <!--news-->
+            <div class="index-t-news bg-fff">
+                <div class="news-word float-left"><div></div></div>
+                <div class="news-title float-left">
+                    <p >大年夜饭桌上必不可少的8道菜</p>
+                    <p style="margin-top: 6.5px;">元宵节吃元宵还是汤圆？</p>
+                </div>
+                <div class="news-img"></div>
+            </div>
+        </div>
+        <!--index center-->
+        <div class="index-center">
+            <!--group buy-->
+            <div class="group-book">
+                <div class="index-common-top bg-fff">
+                    <div class="index-common-topImg group-book-img"></div>
+                    <div class="index-common-seeMore">查看更多  >></div>
+                </div>
+                <!--content-->
+                <div class="swiper-container swiper-goods-ul bg-fff">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-goods-li">
+                            <img class="index-goods-img" src="../img/index/limit_pic.png" alt="">
+                            <div class="index-goods-name">新疆新鲜四季豆</div>
+                            <div class="index-goods-info fc-red">
+                                <div class="fs-13 now-price float-left">￥1.4</div><span class="fs-10 goods-state">2人团</span><div class="fs-11 condition float-right">10斤起拼</div>
+                            </div>
+                            <div class="swiper-goods-li-bot fs-11">
+                                <div class="old-price fc-gray">原价：<s>￥2.6</s></div>
+                                <div class="group-btn fc-white">去拼团</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-goods-li">
+                            <img class="index-goods-img" src="../img/index/limit_pic.png" alt="">
+                            <div class="index-goods-name">新疆新鲜四季豆</div>
+                            <div class="index-goods-info fc-red">
+                                <div class="fs-13 now-price float-left">￥1.4</div><span class="fs-10 goods-state">2人团</span><div class="fs-11 condition float-right">10斤起拼</div>
+                            </div>
+                            <div class="swiper-goods-li-bot fs-11">
+                                <div class="old-price fc-gray">原价：<s>￥2.6</s></div>
+                                <div class="group-btn fc-white">去拼团</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-goods-li">
+                            <img class="index-goods-img" src="../img/index/limit_pic.png" alt="">
+                            <div class="index-goods-name">新疆新鲜四季豆</div>
+                            <div class="index-goods-info fc-red">
+                                <div class="fs-13 now-price float-left">￥1.4</div><span class="fs-10 goods-state">2人团</span><div class="fs-11 condition float-right">10斤起拼</div>
+                            </div>
+                            <div class="swiper-goods-li-bot fs-11">
+                                <div class="old-price fc-gray">原价：<s>￥2.6</s></div>
+                                <div class="group-btn fc-white">去拼团</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-goods-li">
+                            <img class="index-goods-img" src="../img/index/limit_pic.png" alt="">
+                            <div class="index-goods-name">新疆新鲜四季豆</div>
+                            <div class="index-goods-info fc-red">
+                                <div class="fs-13 now-price float-left">￥1.4</div><span class="fs-10 goods-state">2人团</span><div class="fs-11 condition float-right">10斤起拼</div>
+                            </div>
+                            <div class="swiper-goods-li-bot fs-11">
+                                <div class="old-price fc-gray">原价：<s>￥2.6</s></div>
+                                <div class="group-btn fc-white">去拼团</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-goods-li">
+                            <img class="index-goods-img" src="../img/index/limit_pic.png" alt="">
+                            <div class="index-goods-name">新疆新鲜四季豆</div>
+                            <div class="index-goods-info fc-red">
+                                <div class="fs-13 now-price float-left">￥1.4</div><span class="fs-10 goods-state">2人团</span><div class="fs-11 condition float-right">10斤起拼</div>
+                            </div>
+                            <div class="swiper-goods-li-bot fs-11">
+                                <div class="old-price fc-gray">原价：<s>￥2.6</s></div>
+                                <div class="group-btn fc-white">去拼团</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-goods-li">
+                            <img class="index-goods-img" src="../img/index/limit_pic.png" alt="">
+                            <div class="index-goods-name">新疆新鲜四季豆</div>
+                            <div class="index-goods-info fc-red">
+                                <div class="fs-13 now-price float-left">￥1.4</div><span class="fs-10 goods-state">2人团</span><div class="fs-11 condition float-right">10斤起拼</div>
+                            </div>
+                            <div class="swiper-goods-li-bot fs-11">
+                                <div class="old-price fc-gray">原价：<s>￥2.6</s></div>
+                                <div class="group-btn fc-white">去拼团</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--seckill-->
+            <div class="seckill">
+                <div class="index-common-top bg-fff">
+                    <div class="index-common-topImg group-book-img seckill-img"></div>
+                    <div class="index-common-seeMore">查看更多  >></div>
+                </div>
+                <ul class="seckill-goods-ul">
+                    <li class="seckill-goods-li bg-fff">
+                        <img class="seckill-goods-img" src="../img/index/limit_pic.png"></img>
+                        <div class="seckill-goods-info">
+                            <div class="seckill-goods-name fs-14">【特价抢购限1000斤】正宗新疆木瓜</div>
+                            <div class="seckill-endtime fs-13">距结束<span>00</span>:<span>18</span>:<span>32</span></div>
+                            <div class="weui-progress seckill-progress">
+                                <div class="weui-progress__bar seckill-progress-bar">
+                                    <div class="weui-progress__inner-bar js_progress seckill-progress-innerbar" style="width: 50%;">
+                                        <span class="float-left">已抢430斤</span>
+                                    </div>
+                                    <span class="now-progress">50%</span>
+                                </div>
+                            </div>
+                            <div class="seckill-price">
+                                <span class="fc-red float-left fs-18">￥6.2</span><span class="float-left fs-12 fc-gray seckill-old-price">原价：<s>￥8.8</s></span><div class="float-right fc-white fs-12 seckill-btn">立即秒杀</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="seckill-goods-li bg-fff">
+                        <img class="seckill-goods-img" src="../img/index/limit_pic.png"></img>
+                        <div class="seckill-goods-info">
+                            <div class="seckill-goods-name fs-14">【特价抢购限1000斤】正宗新疆木瓜</div>
+                            <div class="seckill-endtime fs-13">距结束<span>00</span>:<span>18</span>:<span>32</span></div>
+                            <div class="weui-progress seckill-progress">
+                                <div class="weui-progress__bar seckill-progress-bar">
+                                    <div class="weui-progress__inner-bar js_progress seckill-progress-innerbar" style="width: 50%;">
+                                        <span class="float-left">已抢430斤</span>
+                                    </div>
+                                    <span class="now-progress">50%</span>
+                                </div>
+                            </div>
+                            <div class="seckill-price">
+                                <span class="fc-red float-left fs-18">￥6.2</span><span class="float-left fs-12 fc-gray seckill-old-price">原价：<s>￥8.8</s></span><div class="float-right fc-white fs-12 seckill-btn">立即秒杀</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="seckill-goods-li bg-fff">
+                        <img class="seckill-goods-img" src="../img/index/limit_pic.png"></img>
+                        <div class="seckill-goods-info">
+                            <div class="seckill-goods-name fs-14">【特价抢购限1000斤】正宗新疆木瓜</div>
+                            <div class="seckill-endtime fs-13">距结束<span>00</span>:<span>18</span>:<span>32</span></div>
+                            <div class="weui-progress seckill-progress">
+                                <div class="weui-progress__bar seckill-progress-bar">
+                                    <div class="weui-progress__inner-bar js_progress seckill-progress-innerbar" style="width: 50%;">
+                                        <span class="float-left">已抢430斤</span>
+                                    </div>
+                                    <span class="now-progress">50%</span>
+                                </div>
+                            </div>
+                            <div class="seckill-price">
+                                <span class="fc-red float-left fs-18">￥6.2</span><span class="float-left fs-12 fc-gray seckill-old-price">原价：<s>￥8.8</s></span><div class="float-right fc-white fs-12 seckill-btn">立即秒杀</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--good shop-->
+            <div class="goodshop">
+                <div class="index-common-top bg-fff">
+                    <div class="index-common-topImg goodshop-img"></div>
+                    <div class="index-common-seeMore">查看更多  >></div>
+                </div>
+                <!--content-->
+                <ul class="goodshop-ul">
+                    <li class="goodshop-li bg-fff">
+                        <img class="goodshop-li-img float-left" src="../img/index/mise_pci.png">
+                        <ul class="goodshop-info">
+                            <li class="shop-info-1">
+                               皕鲜云菜店（滨江店）<div class="deliver-type float-right">皕鲜专送</div>
+                            </li>
+                            <li class="shop-info-2 fs-11">
+                                <ul class="shop-stars float-left">
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="h-star"></li>
+                                    <li class="no-star"></li>
+                                </ul>
+                                <div class="shop-score float-left">3.5</div>
+                                <div class="month-sale float-left">月售1212单</div>
+                            </li>
+                            <li class="shop-info-3">
+                                <div class="deliver-cost float-left">￥20起送 | 配送费</div>
+                                <div class="deliver-time float-right">30分钟 | 2.8km</div>
+                            </li>
+                            <li class="shop-info-4">
+                                <img class="shop-event-img" src="../img/index/event_tag1.png" alt="">
+                                <span class="event-info">满20减5，满30减10</span>
+                                <span class="float-right">v</span>
+                            </li>
+                            <li class="shop-info-5">
+                                <img class="shop-event-img" src="../img/index/event_tag2.png" alt="">
+                                <span class="event-info">10元午餐</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="goodshop-li bg-fff">
+                        <img class="goodshop-li-img float-left" src="../img/index/mise_pci.png">
+                        <ul class="goodshop-info">
+                            <li class="shop-info-1">
+                               皕鲜云菜店（滨江店）<div class="deliver-type float-right">皕鲜专送</div>
+                            </li>
+                            <li class="shop-info-2 fs-11">
+                                <ul class="shop-stars float-left">
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="h-star"></li>
+                                    <li class="no-star"></li>
+                                </ul>
+                                <div class="shop-score float-left">3.5</div>
+                                <div class="month-sale float-left">月售1212单</div>
+                            </li>
+                            <li class="shop-info-3">
+                                <div class="deliver-cost float-left">￥20起送 | 配送费</div>
+                                <div class="deliver-time float-right">30分钟 | 2.8km</div>
+                            </li>
+                            <li class="shop-info-4">
+                                <img class="shop-event-img" src="../img/index/event_tag1.png" alt="">
+                                <span class="event-info">满20减5，满30减10</span>
+                                <span class="float-right">v</span>
+                            </li>
+                            <li class="shop-info-5">
+                                <img class="shop-event-img" src="../img/index/event_tag2.png" alt="">
+                                <span class="event-info">10元午餐</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="goodshop-li bg-fff">
+                        <img class="goodshop-li-img float-left" src="../img/index/mise_pci.png">
+                        <ul class="goodshop-info">
+                            <li class="shop-info-1">
+                               皕鲜云菜店（滨江店）<div class="deliver-type float-right">皕鲜专送</div>
+                            </li>
+                            <li class="shop-info-2 fs-11">
+                                <ul class="shop-stars float-left">
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="h-star"></li>
+                                    <li class="no-star"></li>
+                                </ul>
+                                <div class="shop-score float-left">3.5</div>
+                                <div class="month-sale float-left">月售1212单</div>
+                            </li>
+                            <li class="shop-info-3">
+                                <div class="deliver-cost float-left">￥20起送 | 配送费</div>
+                                <div class="deliver-time float-right">30分钟 | 2.8km</div>
+                            </li>
+                            <li class="shop-info-4">
+                                <img class="shop-event-img" src="../img/index/event_tag1.png" alt="">
+                                <span class="event-info">满20减5，满30减10</span>
+                                <span class="float-right">v</span>
+                            </li>
+                            <li class="shop-info-5">
+                                <img class="shop-event-img" src="../img/index/event_tag2.png" alt="">
+                                <span class="event-info">10元午餐</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--index bottom-->
+        <div class="index-bot">
+            <div class="index-bot-top bg-fff">
+                <div class="hot-title"></div>
+            </div>
+            <!--vegetable-->
+            <div class="hot-container">
+                <div class="hot-container-top bg-fff"><div class="hot-container-title title-vegetable"></div></div>
+                <div class="hot-content vegetable-content bg-fff">
+                    <ul>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/pic_vegetables.png">
+                            <div class="hot-goods-name fs-13 fc-white">芦笋</div>
+                        </li>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/pic_vegetables.png">
+                            <div class="hot-goods-name fs-13 fc-white">芦笋</div>
+                        </li>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/pic_vegetables.png">
+                            <div class="hot-goods-name fs-13 fc-white">芦笋</div>
+                        </li>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/pic_vegetables.png">
+                            <div class="hot-goods-name fs-13 fc-white">芦笋</div>
+                        </li>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/pic_vegetables.png">
+                            <div class="hot-goods-name fs-13 fc-white">芦笋</div>
+                        </li>
+                        <li class="vegetable-more">
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--meat-->
+            <div class="hot-container">
+                <div class="hot-container-top bg-fff"><div class="hot-container-title title-meat"></div></div>
+                <div class="hot-content bg-fff">
+                    <ul>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/meat_pic.png">
+                            <div class="hot-goods-name fs-13 fc-white">鸡蛋</div>
+                        </li>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/meat_pic.png">
+                            <div class="hot-goods-name fs-13 fc-white">鸡蛋</div>
+                        </li>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/meat_pic.png">
+                            <div class="hot-goods-name fs-13 fc-white">鸡蛋</div>
+                        </li>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/meat_pic.png">
+                            <div class="hot-goods-name fs-13 fc-white">鸡蛋</div>
+                        </li>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/meat_pic.png">
+                            <div class="hot-goods-name fs-13 fc-white">鸡蛋</div>
+                        </li>
+                        <li class="meat-more">
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--seafood-->
+            <div class="hot-container">
+                <div class="hot-container-top bg-fff"><div class="hot-container-title title-vegetable"></div></div>
+                <div class="hot-content bg-fff">
+                    <ul>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/pic_fish.png">
+                            <div class="hot-goods-name fs-13 fc-white">鲜鱼</div>
+                        </li>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/pic_fish.png">
+                            <div class="hot-goods-name fs-13 fc-white">鲜鱼</div>
+                        </li>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/pic_fish.png">
+                            <div class="hot-goods-name fs-13 fc-white">鲜鱼</div>
+                        </li>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/pic_fish.png">
+                            <div class="hot-goods-name fs-13 fc-white">鲜鱼</div>
+                        </li>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/pic_fish.png">
+                            <div class="hot-goods-name fs-13 fc-white">鲜鱼</div>
+                        </li>
+                        <li class="seafood-more">
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--oil-->
+            <div class="hot-container">
+                <div class="hot-container-top bg-fff"><div class="hot-container-title title-vegetable"></div></div>
+                <div class="hot-content bg-fff">
+                    <ul>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/pic_staple_foods.png">
+                            <div class="hot-goods-name fs-13 fc-white">橄榄油</div>
+                        </li>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/pic_staple_foods.png">
+                            <div class="hot-goods-name fs-13 fc-white">橄榄油</div>
+                        </li>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/pic_staple_foods.png">
+                            <div class="hot-goods-name fs-13 fc-white">橄榄油</div>
+                        </li>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/pic_staple_foods.png">
+                            <div class="hot-goods-name fs-13 fc-white">橄榄油</div>
+                        </li>
+                        <li>
+                            <img class="hot-goods-img" src="../img/index/pic_staple_foods.png">
+                            <div class="hot-goods-name fs-13 fc-white">橄榄油</div>
+                        </li>
+                        <li class="oil-more">
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!-- jQuery WeUI -->
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+<!-- jQuery WeUI拓展插件需要的JS -->
+<!--<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/swiper.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/city-picker.min.js"></script>
+<script>
+    /*banner*/
+    var banner = new Swiper('.index-banner', {
+        speed:2000,
+        autoplay:{
+            delay:2000,
+            disableOnInteraction: false,
+        },//可选选项，自动滑动
+        loop:true,
+        pagination: {
+            el: '.swiper-pagination',
+            /*bulletClass : 'my-bullet',
+            bulletActiveClass: 'my-bullet-active',*/
+        },
+    });
+    $('.my-bullet').addClass('.my-bullet');
+    $('.my-bullet-active').addClass('.my-bullet-active');
+    /*swiper list*/
+    var swiperGoodsList = new Swiper('.swiper-goods-ul',{
+        freeMode : true,
+        width:150
+    });
+    /*popup window*/
+    $.modal({
+        title: '提示',
+        text: '您还未添加收货地址',
+        buttons: [
+            {
+                text: "先逛逛", onClick: function(){
+                    console.log(1)
+                }
+            },
+            {
+                text: "去添加", onClick: function(){
+                    console.log(2);
+                    location.href="editAddress.html";
+                }
+            },
+        ]
+    });
+</script>
+</html>

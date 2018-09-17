@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>皕鲜</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <!-- jQuery WeUI -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body bgcolor="#f5f5f5">
+<div class="search-res-top">
+    <!--顶部搜索-->
+    <div class="weui-search-bar search-bar-wrap search-res-bar" id="searchBar">
+        <div class="arrow-l"></div>
+        <form class="weui-search-bar__form">
+            <div class="weui-search-bar__box search-bar-container">
+                <i class="weui-icon-search"></i>
+                <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="输入商家、商品名称" required="">
+                <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+            </div>
+            <!--<label class="weui-search-bar__label" id="searchText">
+                <i class="weui-icon-search"></i>
+                <span>搜索</span>
+            </label>-->
+        </form>
+        <a href="javascript:" class="weui-search-bar__cancel-btn search-bar-btn-cancel" id="searchCancel">取消</a>
+    </div>
+    <!--筛选-->
+    <div class="sift-bar bg-fff">
+        <div>综合排序  <span>v</span></div>
+        <div>距离最近</div>
+        <div>好评优先</div>
+        <div class="sift-btn">筛选  <span class="sift-btn-img"></span></div>
+    </div>
+</div>
+    <!--content-->
+    <div class="search-res-shop" style="margin-top: 100px">
+        <!--index top-->
+        <div class="content-top">
+            <!--res shop-->
+            <div class="goodshop">
+                <!--<div class="index-common-top bg-fff">
+                    <div class="index-common-topImg goodshop-img"></div>
+                    <div class="index-common-seeMore">查看更多  >></div>
+                </div>-->
+                <!--content-->
+                <ul class="goodshop-ul">
+                    <li class="goodshop-li bg-fff">
+                        <img class="goodshop-li-img float-left" src="../img/index/mise_pci.png">
+                        <ul class="goodshop-info">
+                            <li class="shop-info-1">
+                               皕鲜云菜店（滨江店）<div class="deliver-type float-right">皕鲜专送</div>
+                            </li>
+                            <li class="shop-info-2 fs-11">
+                                <ul class="shop-stars float-left">
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="h-star"></li>
+                                    <li class="no-star"></li>
+                                </ul>
+                                <div class="shop-score float-left">3.5</div>
+                                <div class="month-sale float-left">月售1212单</div>
+                            </li>
+                            <li class="shop-info-3">
+                                <div class="deliver-cost float-left">￥20起送 | 配送费</div>
+                                <div class="deliver-time float-right">30分钟 | 2.8km</div>
+                            </li>
+                            <li class="shop-info-4">
+                                <img class="shop-event-img" src="../img/index/event_tag1.png" alt="">
+                                <span class="event-info">满20减5，满30减10</span>
+                                <span class="float-right">v</span>
+                            </li>
+                            <li class="shop-info-5">
+                                <img class="shop-event-img" src="../img/index/event_tag2.png" alt="">
+                                <span class="event-info">10元午餐</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="goodshop-li bg-fff">
+                        <img class="goodshop-li-img float-left" src="../img/index/mise_pci.png">
+                        <ul class="goodshop-info">
+                            <li class="shop-info-1">
+                               皕鲜云菜店（滨江店）<div class="deliver-type float-right">皕鲜专送</div>
+                            </li>
+                            <li class="shop-info-2 fs-11">
+                                <ul class="shop-stars float-left">
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="h-star"></li>
+                                    <li class="no-star"></li>
+                                </ul>
+                                <div class="shop-score float-left">3.5</div>
+                                <div class="month-sale float-left">月售1212单</div>
+                            </li>
+                            <li class="shop-info-3">
+                                <div class="deliver-cost float-left">￥20起送 | 配送费</div>
+                                <div class="deliver-time float-right">30分钟 | 2.8km</div>
+                            </li>
+                            <li class="shop-info-4">
+                                <img class="shop-event-img" src="../img/index/event_tag1.png" alt="">
+                                <span class="event-info">满20减5，满30减10</span>
+                                <span class="float-right">v</span>
+                            </li>
+                            <li class="shop-info-5">
+                                <img class="shop-event-img" src="../img/index/event_tag2.png" alt="">
+                                <span class="event-info">10元午餐</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-bot bg-fff">
+            <div class="guess-like">
+                <div class="line-container">
+                    <span class="line float-right"></span>
+                </div>
+                <div class="guess-like-title">
+                    <div class="heart-img">
+
+                    </div>
+                    <div class="">  猜你喜欢</div>
+                </div>
+                <div class="line-container">
+                    <span class="line float-left"></span>
+                </div>
+            </div>
+            <!--res guess like-->
+            <div class="goodshop">
+                <!--<div class="index-common-top bg-fff">
+                    <div class="index-common-topImg goodshop-img"></div>
+                    <div class="index-common-seeMore">查看更多  >></div>
+                </div>-->
+                <!--content-->
+                <ul class="goodshop-ul">
+                    <li class="goodshop-li bg-fff">
+                        <img class="goodshop-li-img float-left" src="../img/index/mise_pci.png">
+                        <ul class="goodshop-info">
+                            <li class="shop-info-1">
+                                皕鲜云菜店（滨江店）<div class="deliver-type float-right">皕鲜专送</div>
+                            </li>
+                            <li class="shop-info-2 fs-11">
+                                <ul class="shop-stars float-left">
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="h-star"></li>
+                                    <li class="no-star"></li>
+                                </ul>
+                                <div class="shop-score float-left">3.5</div>
+                                <div class="month-sale float-left">月售1212单</div>
+                            </li>
+                            <li class="shop-info-3">
+                                <div class="deliver-cost float-left">￥20起送 | 配送费</div>
+                                <div class="deliver-time float-right">30分钟 | 2.8km</div>
+                            </li>
+                            <li class="shop-info-4">
+                                <img class="shop-event-img" src="../img/index/event_tag1.png" alt="">
+                                <span class="event-info">满20减5，满30减10</span>
+                                <span class="float-right">v</span>
+                            </li>
+                            <li class="shop-info-5">
+                                <img class="shop-event-img" src="../img/index/event_tag2.png" alt="">
+                                <span class="event-info">10元午餐</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="goodshop-li bg-fff">
+                        <img class="goodshop-li-img float-left" src="../img/index/mise_pci.png">
+                        <ul class="goodshop-info">
+                            <li class="shop-info-1">
+                                皕鲜云菜店（滨江店）<div class="deliver-type float-right">皕鲜专送</div>
+                            </li>
+                            <li class="shop-info-2 fs-11">
+                                <ul class="shop-stars float-left">
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="h-star"></li>
+                                    <li class="no-star"></li>
+                                </ul>
+                                <div class="shop-score float-left">3.5</div>
+                                <div class="month-sale float-left">月售1212单</div>
+                            </li>
+                            <li class="shop-info-3">
+                                <div class="deliver-cost float-left">￥20起送 | 配送费</div>
+                                <div class="deliver-time float-right">30分钟 | 2.8km</div>
+                            </li>
+                            <li class="shop-info-4">
+                                <img class="shop-event-img" src="../img/index/event_tag1.png" alt="">
+                                <span class="event-info">满20减5，满30减10</span>
+                                <span class="float-right">v</span>
+                            </li>
+                            <li class="shop-info-5">
+                                <img class="shop-event-img" src="../img/index/event_tag2.png" alt="">
+                                <span class="event-info">10元午餐</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="goodshop-li bg-fff">
+                        <img class="goodshop-li-img float-left" src="../img/index/mise_pci.png">
+                        <ul class="goodshop-info">
+                            <li class="shop-info-1">
+                                皕鲜云菜店（滨江店）<div class="deliver-type float-right">皕鲜专送</div>
+                            </li>
+                            <li class="shop-info-2 fs-11">
+                                <ul class="shop-stars float-left">
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="h-star"></li>
+                                    <li class="no-star"></li>
+                                </ul>
+                                <div class="shop-score float-left">3.5</div>
+                                <div class="month-sale float-left">月售1212单</div>
+                            </li>
+                            <li class="shop-info-3">
+                                <div class="deliver-cost float-left">￥20起送 | 配送费</div>
+                                <div class="deliver-time float-right">30分钟 | 2.8km</div>
+                            </li>
+                            <li class="shop-info-4">
+                                <img class="shop-event-img" src="../img/index/event_tag1.png" alt="">
+                                <span class="event-info">满20减5，满30减10</span>
+                                <span class="float-right">v</span>
+                            </li>
+                            <li class="shop-info-5">
+                                <img class="shop-event-img" src="../img/index/event_tag2.png" alt="">
+                                <span class="event-info">10元午餐</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="goodshop-li bg-fff">
+                        <img class="goodshop-li-img float-left" src="../img/index/mise_pci.png">
+                        <ul class="goodshop-info">
+                            <li class="shop-info-1">
+                                皕鲜云菜店（滨江店）<div class="deliver-type float-right">皕鲜专送</div>
+                            </li>
+                            <li class="shop-info-2 fs-11">
+                                <ul class="shop-stars float-left">
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="h-star"></li>
+                                    <li class="no-star"></li>
+                                </ul>
+                                <div class="shop-score float-left">3.5</div>
+                                <div class="month-sale float-left">月售1212单</div>
+                            </li>
+                            <li class="shop-info-3">
+                                <div class="deliver-cost float-left">￥20起送 | 配送费</div>
+                                <div class="deliver-time float-right">30分钟 | 2.8km</div>
+                            </li>
+                            <li class="shop-info-4">
+                                <img class="shop-event-img" src="../img/index/event_tag1.png" alt="">
+                                <span class="event-info">满20减5，满30减10</span>
+                                <span class="float-right">v</span>
+                            </li>
+                            <li class="shop-info-5">
+                                <img class="shop-event-img" src="../img/index/event_tag2.png" alt="">
+                                <span class="event-info">10元午餐</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="goodshop-li bg-fff">
+                        <img class="goodshop-li-img float-left" src="../img/index/mise_pci.png">
+                        <ul class="goodshop-info">
+                            <li class="shop-info-1">
+                                皕鲜云菜店（滨江店）<div class="deliver-type float-right">皕鲜专送</div>
+                            </li>
+                            <li class="shop-info-2 fs-11">
+                                <ul class="shop-stars float-left">
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="h-star"></li>
+                                    <li class="no-star"></li>
+                                </ul>
+                                <div class="shop-score float-left">3.5</div>
+                                <div class="month-sale float-left">月售1212单</div>
+                            </li>
+                            <li class="shop-info-3">
+                                <div class="deliver-cost float-left">￥20起送 | 配送费</div>
+                                <div class="deliver-time float-right">30分钟 | 2.8km</div>
+                            </li>
+                            <li class="shop-info-4">
+                                <img class="shop-event-img" src="../img/index/event_tag1.png" alt="">
+                                <span class="event-info">满20减5，满30减10</span>
+                                <span class="float-right">v</span>
+                            </li>
+                            <li class="shop-info-5">
+                                <img class="shop-event-img" src="../img/index/event_tag2.png" alt="">
+                                <span class="event-info">10元午餐</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="goodshop-li bg-fff">
+                        <img class="goodshop-li-img float-left" src="../img/index/mise_pci.png">
+                        <ul class="goodshop-info">
+                            <li class="shop-info-1">
+                                皕鲜云菜店（滨江店）<div class="deliver-type float-right">皕鲜专送</div>
+                            </li>
+                            <li class="shop-info-2 fs-11">
+                                <ul class="shop-stars float-left">
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="star"></li>
+                                    <li class="h-star"></li>
+                                    <li class="no-star"></li>
+                                </ul>
+                                <div class="shop-score float-left">3.5</div>
+                                <div class="month-sale float-left">月售1212单</div>
+                            </li>
+                            <li class="shop-info-3">
+                                <div class="deliver-cost float-left">￥20起送 | 配送费</div>
+                                <div class="deliver-time float-right">30分钟 | 2.8km</div>
+                            </li>
+                            <li class="shop-info-4">
+                                <img class="shop-event-img" src="../img/index/event_tag1.png" alt="">
+                                <span class="event-info">满20减5，满30减10</span>
+                                <span class="float-right">v</span>
+                            </li>
+                            <li class="shop-info-5">
+                                <img class="shop-event-img" src="../img/index/event_tag2.png" alt="">
+                                <span class="event-info">10元午餐</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="heart"></div>
+    </div>
+
+</body>
+<!-- jQuery WeUI -->
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+<!-- jQuery WeUI拓展插件需要的JS -->
+<!--<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/swiper.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/city-picker.min.js"></script>
+<script>
+
+</script>
+</html>

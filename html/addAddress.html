@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑地址</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <!-- jQuery WeUI -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <!--<link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">-->
+    <link rel="stylesheet" href="../lib/jquery-weui/jquery-weui.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body bgcolor="#f5f5f5">
+    <div class="editAddress-wrap">
+        <div class="top">
+            <div class="arrow-l"></div>
+            <div class="title">编辑地址</div>
+            <input class="btn-save" type="submit" value="保存" style="border: none">
+        </div>
+        <div class="center">
+            <div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label editAddress-label">收货人</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="editAddress-input weui-input" type="text"  placeholder="请输入收货人姓名">
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label editAddress-label">联系方式</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="editAddress-input weui-input" type="number" pattern="(\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$" placeholder="请输入手机号">
+                    </div>
+                </div>
+
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label editAddress-label">所在地区</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="editAddress-input" type="text" id='city-picker' placeholder="请选择" value="" />
+                        <div class="arrow-r"></div>
+                    </div>
+                </div>
+
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label editAddress-label">详细地址</label></div>
+                    <div class="weui-cell__bd">
+                        <!--<input class="weui-input" type="text"  placeholder="请输入详细地址，如街道、门牌号、小区、楼栋号、单元室等">-->
+                        <textarea class="editAddress-input address-detail" id="" wrap="soft" cols="30" rows="3" placeholder="请输入详细地址，如街道、门牌号、小区、楼栋号、单元室等"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weui-cell weui-cell_switch set-defaultAddress">
+                <div class="weui-cell__bd editAddress-label">设为默认地址</div>
+                <div class="weui-cell__ft">
+                    <input class="weui-switch" type="checkbox">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- jQuery WeUI -->
+<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<!--<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>-->
+<script src="../lib/jquery-weui/jquery-weui.js"></script>
+<!-- jQuery WeUI拓展插件需要的JS -->
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/city-picker.min.js"></script>
+<script>
+    $("#city-picker").cityPicker({
+        title: "请选择",
+        /*toolbarTemplate: '<div class="toolbar-inner"><a href="javascript:;" class="picker-button-l close-picker">取消</a><a href="javascript:;" class="picker-button-r close-picker">完成</a><h1 class="title">请选择</h1></div>'*/
+        toolbarTemplate: '<div class="toolbar">          <div class="toolbar-inner">          <a href="javascript:;" class="cancel-picker picker-button-l">取消</a><a href="javascript:;" class="picker-button close-picker">完成</a>          <h1 class="title">请选择</h1>          </div>          </div>'
+    });
+    $(document).on("click", ".cancel-picker", function() {
+            $.closePicker();
+            // $('.editAddress-input').value("");
+
+    });
+</script>
+<style>
+
+</style>
+</html>
